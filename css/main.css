@@ -1,0 +1,536 @@
+/*
+* Skeleton V2.0.4
+* Copyright 2014, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 12/9/2014
+* Sass Version by Seth Coelen https://github.com/whatsnewsaes
+*/
+@import url("./normalize.css");
+@import url("./variables.css");
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.5em;
+    line-height: 1.6;
+    font-weight: 400;
+    font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: var(--color-primary-4);
+}
+
+a {
+    color: var(--color-primary-2);
+}
+
+a:hover {
+    color: var(--color-primary-3);
+}
+
+header {
+    background-color: var(--color-primary-2);
+    padding-top: 2em;
+    padding-bottom: 2em;
+    margin-bottom: 2em;
+    color: var(--color-white);
+}
+
+header .pic {
+    text-align: center;
+}
+
+@media (min-width: 1000px) {
+    header .pic {
+        text-align: left;
+    }
+}
+
+header img {
+    border-radius: 100%;
+}
+
+header a {
+    color: var(--color-white);
+    display: block;
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: underline;
+    color: var(--color-white);
+}
+
+header p {
+    font-size: 15px;
+}
+
+@media (min-width: 1000px) {
+    header p {
+        font-size: 18px;
+        font-weight: 100;
+        line-height: 30px;
+    }
+}
+
+header h1 {
+    font-size: 50px;
+    line-height: initial;
+}
+
+@media (min-width: 1000px) {
+    header h1 {
+        font-size: 100px;
+        line-height: 100px;
+    }
+}
+
+hr {
+    margin-top: 3rem;
+    margin-bottom: 3.5rem;
+    border-width: 0;
+    border-top: 1px solid var(--color-white);
+}
+
+.timeline {
+    min-height: 10px;
+}
+
+.timeline h4 {
+    text-align: center;
+}
+
+.timeline:after {
+    display: none;
+}
+
+@media (min-width: 1000px) {
+    .timeline {
+        border-right: 1px solid var(--color-primary-2);
+        min-height: 300px;
+    }
+
+    .timeline h4 {
+        text-align: left;
+    }
+
+    .timeline:after {
+        content: "-";
+        background-color: var(--color-primary-2);
+        color: var(--color-primary-2);
+        font-size: 0;
+        width: 15px;
+        height: 15px;
+        display: block;
+        position: relative;
+        top: -30px;
+        left: 12px;
+        float: right;
+        border: 4px solid var(--color-white);
+        box-shadow: 0px 0px 0px 3px var(--color-primary-2);
+        border-radius: 100%;
+    }
+}
+
+.skills,
+.education,
+footer {
+    border-top: 1px solid var(--color-primary-2);
+    padding: 35px 0;
+}
+
+.skills span {
+    padding: 5px 10px;
+    background-color: var(--color-primary-2);
+    color: var(--color-white);
+    margin: 0 20px 20px 0;
+    display: inline-block;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 26px;
+    margin-bottom: 5px;
+}
+
+h3 {
+    font-size: 20px;
+    color: var(--color-primary-2);
+    margin-bottom: 5px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+h5 {
+    font-size: 16px;
+}
+
+h6 {
+    font-size: 14px;
+}
+
+p {
+    margin-top: 0;
+}
+
+/* Modules */
+/*
+  * Skeleton V2.0.4
+  * Copyright 2014, Dave Gamache
+  * www.getskeleton.com
+  * Free to use under the MIT license.
+  * http://www.opensource.org/licenses/mit-license.php
+  * 12/9/2014
+  * Sass Version by Seth Coelen https://github.com/whatsnewsaes
+  */
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.container .row:first-of-type {
+    margin-top: -30px;
+}
+
+.container .row:first-of-type .columns {
+    padding-top: 30px;
+}
+
+.column,
+.columns {
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+}
+
+@media (min-width: 1000px) {
+    .columns:first-child {
+        padding-left: 4%;
+    }
+}
+
+@media (min-width: 400px) {
+    .container {
+        width: 85%;
+        padding: 0;
+    }
+}
+
+@media (min-width: 1000px) {
+    .container {
+        width: 80%;
+    }
+
+    .column,
+    .columns {
+        margin-left: 4%;
+    }
+
+    .column:first-child,
+    .columns:first-child {
+        margin-left: 0;
+    }
+
+    .one.column,
+    .one.columns {
+        width: 4.66667%;
+    }
+
+    .two.columns {
+        width: 13.33333%;
+    }
+
+    .three.columns {
+        width: 22%;
+    }
+
+    .four.columns {
+        width: 30.66667%;
+    }
+
+    .five.columns {
+        width: 39.33333%;
+    }
+
+    .six.columns {
+        width: 48%;
+    }
+
+    .seven.columns {
+        width: 56.66667%;
+    }
+
+    .eight.columns {
+        width: 65.33333%;
+    }
+
+    .nine.columns {
+        width: 74%;
+    }
+
+    .ten.columns {
+        width: 82.66667%;
+    }
+
+    .eleven.columns {
+        width: 91.33333%;
+    }
+
+    .twelve.columns {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .one-third.column {
+        width: 30.66667%;
+    }
+
+    .two-thirds.column {
+        width: 65.33333%;
+    }
+
+    .one-half.column {
+        width: 48%;
+    }
+
+    .offset-by-one.column,
+    .offset-by-one.columns {
+        margin-left: 8.66667%;
+    }
+
+    .offset-by-two.column,
+    .offset-by-two.columns {
+        margin-left: 17.33333%;
+    }
+
+    .offset-by-three.column,
+    .offset-by-three.columns {
+        margin-left: 26%;
+    }
+
+    .offset-by-four.column,
+    .offset-by-four.columns {
+        margin-left: 34.66667%;
+    }
+
+    .offset-by-five.column,
+    .offset-by-five.columns {
+        margin-left: 43.33333%;
+    }
+
+    .offset-by-six.column,
+    .offset-by-six.columns {
+        margin-left: 52%;
+    }
+
+    .offset-by-seven.column,
+    .offset-by-seven.columns {
+        margin-left: 60.66667%;
+    }
+
+    .offset-by-eight.column,
+    .offset-by-eight.columns {
+        margin-left: 69.33333%;
+    }
+
+    .offset-by-nine.column,
+    .offset-by-nine.columns {
+        margin-left: 78%;
+    }
+
+    .offset-by-ten.column,
+    .offset-by-ten.columns {
+        margin-left: 86.66667%;
+    }
+
+    .offset-by-eleven.column,
+    .offset-by-eleven.columns {
+        margin-left: 95.33333%;
+    }
+
+    .offset-by-one-third.column,
+    .offset-by-one-third.columns {
+        margin-left: 34.66667%;
+    }
+
+    .offset-by-two-thirds.column,
+    .offset-by-two-thirds.columns {
+        margin-left: 69.33333%;
+    }
+
+    .offset-by-one-half.column,
+    .offset-by-one-half.column {
+        margin-left: 52%;
+    }
+}
+
+.container:after,
+.row:after,
+.u-cf {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.button,
+button {
+    display: inline-block;
+    height: 38px;
+    padding: 0 30px;
+    color: var(--color-primary-2);
+    text-align: center;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border-radius: 4px;
+    border: 1px solid var(--color-primary-2);
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+    display: inline-block;
+    height: 38px;
+    padding: 0 30px;
+    color: var(--color-primary-2);
+    text-align: center;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border-radius: 4px;
+    border: 1px solid var(--color-primary-2);
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.button:hover,
+button:hover {
+    color: #333;
+    border-color: #888888;
+    outline: 0;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover {
+    color: #333;
+    border-color: #888888;
+    outline: 0;
+}
+
+.button:focus,
+button:focus {
+    color: #333;
+    border-color: #888888;
+    outline: 0;
+}
+
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus {
+    color: #333;
+    border-color: #888888;
+    outline: 0;
+}
+
+.button.button-primary,
+button.button-primary {
+    color: #fff;
+    background-color: var(--color-primary-2);
+    border-color: var(--color-primary-2);
+}
+
+input[type="submit"].button-primary,
+input[type="reset"].button-primary,
+input[type="button"].button-primary {
+    color: #fff;
+    background-color: var(--color-primary-2);
+    border-color: var(--color-primary-2);
+}
+
+.button.button-primary:hover,
+button.button-primary:hover {
+    color: #fff;
+    background-color: var(--color-primary-2);
+    border-color: var(--color-primary-2);
+}
+
+input[type="submit"].button-primary:hover,
+input[type="reset"].button-primary:hover,
+input[type="button"].button-primary:hover {
+    color: #fff;
+    background-color: var(--color-primary-2);
+    border-color: var(--color-primary-2);
+}
+
+.button.button-primary:focus,
+button.button-primary:focus {
+    color: #fff;
+    background-color: var(--color-primary-2);
+    border-color: var(--color-primary-2);
+}
+
+input[type="submit"].button-primary:focus,
+input[type="reset"].button-primary:focus,
+input[type="button"].button-primary:focus {
+    color: #fff;
+    background-color: var(--color-primary-2);
+    border-color: var(--color-primary-2);
+}
+
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"] {
+    height: 38px;
+    padding: 6px 10px;
+    background-color: #fff;
+    border: 1px solid #ff2d2d;
+    border-radius: 4px;
+    box-shadow: none;
+    box-sizing: border-box;
+}
+
+/*# sourceMappingURL=main.css.map */
