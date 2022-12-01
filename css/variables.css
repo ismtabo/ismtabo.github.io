@@ -5,12 +5,12 @@
 /* Feel free to copy&paste color codes to your application */
 
 :root{
-    --color-primary-0: #2C827B;	/* Main Primary color */
-    --color-primary-1: #A6E0DC;
-    --color-primary-2: #55A6A0;
-    --color-primary-3: #12625C;
+    --color-primary-0: #003B00;	/* Main Primary color */
+    --color-primary-1: #008F11;
+    --color-primary-2: #00FF41;
+    --color-primary-3: #000000; /* #0D0208; */
     --color-primary-4: #002A27;
-    --color-white: var(--color-primary-1)
+    --color-white: var(--color-primary-2);
 }
 /* As hex codes */
 
