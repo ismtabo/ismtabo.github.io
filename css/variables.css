@@ -10,7 +10,7 @@
     --color-primary-2: #00FF41;
     --color-primary-3: #000000; /* #0D0208; */
     --color-primary-4: #002A27;
-    --color-white: var(--color-primary-2);
+    --color-white: lightgrey;
 }
 /* As hex codes */
 
